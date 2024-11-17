@@ -16,4 +16,8 @@
 [Git Going Fast: One Hour Git Crash Course](readme_files/Common/Git_Going_Fast.md) - done
 
 ## Path to Data Engineering
-[Intro to Data Engineering](readme_files/Data_Engineering/Intro_to_Data_Engineering.md) - 0%
+[Intro to Data Engineering](readme_files/Data_Engineering/Intro_to_Data_Engineering.md) - done
+
+[Data Engineering for Beginners with Python and SQL](/readme_files/Data_Engineering/Data_Engineering_for_Beginners_with_Python_and_SQL.md) - 0%
+
+
