@@ -18,6 +18,6 @@
 ## Path to Data Engineering
 [Intro to Data Engineering](readme_files/Data_Engineering/Intro_to_Data_Engineering.md) - done
 
-[Data Engineering for Beginners with Python and SQL](/readme_files/Data_Engineering/Data_Engineering_for_Beginners_with_Python_and_SQL.md) - 0%
+[Data Engineering for Beginners with Python and SQL](/readme_files/Data_Engineering/Data_Engineering_for_Beginners_with_Python_and_SQL.md) - 10%
 
 
