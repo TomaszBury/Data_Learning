@@ -2,4 +2,4 @@
 
 ![Git Going Fast: One Hour Git Crash Course]()
 
-- [Back to Main README](../README.md)
+- [Back to Main README](/README.md)
