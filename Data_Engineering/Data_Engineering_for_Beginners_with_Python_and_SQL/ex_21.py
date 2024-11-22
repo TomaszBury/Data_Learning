@@ -12,14 +12,14 @@ class Stack:
         if not self.is_empty():
             return self.stack.pop()
         else:
-            return "Stack is empty"
+            return None
 
     def peek(self):
         # Return the item at the top of the stack without removing it
         if not self.is_empty():
             return self.stack[-1]
         else:
-            return "Stack is empty"
+            return None
 
     def is_empty(self):
         # Return True if the stack is empty, False otherwise
@@ -35,7 +35,26 @@ stack.push(1)
 stack.push(2)
 stack.push(3)
 
-print(stack.pop())  # Should print 3
-print(stack.peek())  # Should print 2
-print(stack.is_empty())  # Should print False
-print(stack.size())  # Should print 2
+assert stack.pop() == 3  # Should print 3
+assert stack.peek() == 2  # Should print 2
+assert stack.is_empty() == False  # Should print False
+assert stack.size() == 2  # Should print 2
+
+# Example of a test that will fail
+def test_fail_pop_on_empty_stack():
+    stack = Stack()
+    try:
+        stack.pop()
+    except IndexError as e:
+        print("Test failed as expected with IndexError:", str(e))
+
+def test_fail_peek_on_empty_stack():
+    stack = Stack()
+    try:
+        stack.peek()
+    except IndexError as e:
+        print("Test failed as expected with IndexError:", str(e))
+
+# Example usage:
+test_fail_pop_on_empty_stack()
+test_fail_peek_on_empty_stack()
