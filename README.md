@@ -25,6 +25,8 @@
 
 [The Ultimate Pandas Bootcamp: Advanced Python Data Analysis](/readme_files/Data_Engineering/The_Ultimate_Pandas_Bootcamp_Advanced_Python_Data_Analysis.md) - done  
 
+[Advanced SQL for Data Engineering](/readme_files/Data_Engineering/Advanced-sql-for-data-engineering.md) - 1%
+
 ## Path to Data Science  
 
 ## Path to Data Artificial Intelligence / Machine Learning
