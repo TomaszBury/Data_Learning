@@ -18,6 +18,13 @@
 ## Path to Data Engineering
 [Intro to Data Engineering](readme_files/Data_Engineering/Intro_to_Data_Engineering.md) - done
 
-[Data Engineering for Beginners with Python and SQL](/readme_files/Data_Engineering/Data_Engineering_for_Beginners_with_Python_and_SQL.md) - 19%
+[Data Engineering for Beginners with Python and SQL](/readme_files/Data_Engineering/Data_Engineering_for_Beginners_with_Python_and_SQL.md) - done
 
 
+[Data Analysis with Pandas and Python](/readme_files/Data_Engineering/Data-Analysis-with-Pandas-and-Python-main.md) - done  
+
+[The Ultimate Pandas Bootcamp: Advanced Python Data Analysis](/readme_files/Data_Engineering/The_Ultimate_Pandas_Bootcamp_Advanced_Python_Data_Analysis.md) - done  
+
+## Path to Data Science  
+
+## Path to Data Artificial Intelligence / Machine Learning
