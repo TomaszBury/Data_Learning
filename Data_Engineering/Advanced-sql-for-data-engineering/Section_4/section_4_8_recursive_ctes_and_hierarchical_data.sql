@@ -1,3 +1,4 @@
+drop table advanced_tutorial.public.employees ;
 with recursive date_table as (
 select
 '2023-01-01': :date da_date union all select da_date + 1

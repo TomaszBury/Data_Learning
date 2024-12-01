@@ -1,3 +1,5 @@
+drop table advanced_tutorial.public.employees;
+
 CREATE TABLE Employees (
     ID SERIAL PRIMARY KEY,
     Name TEXT NOT NULL,

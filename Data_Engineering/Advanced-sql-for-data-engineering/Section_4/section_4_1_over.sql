@@ -5,7 +5,7 @@ CREATE TABLE orders (
   order_total DECIMAL(10, 2) NOT NULL
 );
 
-INSERT INTO orders (customer_id, order_date, order_total)
+INSERT INTO oadvanced_tutorial.public.rders (customer_id, order_date, order_total)
 VALUES
   (1, '2022-01-01', 100.00),
   (1, '2022-02-01', 50.00),
@@ -18,8 +18,8 @@ VALUES
 
 SELECT order_id, customer_id, order_date, order_total,
        SUM(order_total) OVER (PARTITION BY customer_id ORDER BY order_date) AS cumulative_total
-FROM orders;
+FROM advanced_tutorial.public.orders;
 
 SELECT order_id, customer_id, order_date, order_total
-FROM orders
+FROM advanced_tutorial.public.orders
 having row_number() OVER (PARTITION BY customer_id ORDER BY order_total desc) = 1

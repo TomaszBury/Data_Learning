@@ -1,14 +1,14 @@
-CREATE TABLE employees ( id SERIAL PRIMARY KEY, 
+CREATE TABLE advanced_tutorial.public.employees ( id SERIAL PRIMARY KEY, 
 name VARCHAR (255), 
-salary varchar, 
+salary NUMERIC, 
 department VARCHAR (255), 
-bonus varchar
+bonus NUMERIC
 );
 
 
-drop table employees ;
+drop table advanced_tutorial.public.employees ;
 
-INSERT INTO employees (name, salary, department, bonus) VALUES
+INSERT INTO advanced_tutorial.public.employees (name, salary, department, bonus) VALUES
 	('John Doe', 50000.00, 'IT', 5000),
 	('Jane Doe', NULL, 'Sales', 5000),
 	('Bob Smith', 55000.00, NULL, 5000);
@@ -25,4 +25,4 @@ select
 			else 'uncaught exception'
 	end as salary_classification
 from
-	employees ;
+	advanced_tutorial.public.employees ;

@@ -26,8 +26,8 @@ insert into buildings (building_name)
 values ('Rathskeller'), ('Amundsen'), ('JRC');
 
 
-select * from class_unnormalized;
-select * from buildings ;
+select * from advanced_tutorial.public.class_unnormalized;
+select * from advanced_tutorial.public.buildings ;
 
 select
 	student_id,

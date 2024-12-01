@@ -30,3 +30,5 @@ insert into enum_demo(day_of_week, wage)
 values('Monday', 5);
 insert into enum_demo(wage)
 values('Monday', -4);
+
+select * from advanced_tutorial.public.enum_demo ed;

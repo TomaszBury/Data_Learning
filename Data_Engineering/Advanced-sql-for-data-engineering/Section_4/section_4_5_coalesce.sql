@@ -6,9 +6,9 @@ bonus varchar
 );
 
 
-drop table employees ;
+drop table advanced_tutorial.public.employees ;
 
-INSERT INTO employees (name, salary, department, bonus) VALUES
+INSERT INTO advanced_tutorial.public.employees (name, salary, department, bonus) VALUES
 	('John Doe', 50000.00, 'IT', 5000),
 	('Jane Doe', NULL, 'Sales', 5000),
 	('Bob Smith', 55000.00, NULL, 5000);
@@ -19,4 +19,4 @@ select
 	name,
 	coalesce(salary, department, bonus) as tru_salary
 from
-	employees;
+	advanced_tutorial.public.employees;

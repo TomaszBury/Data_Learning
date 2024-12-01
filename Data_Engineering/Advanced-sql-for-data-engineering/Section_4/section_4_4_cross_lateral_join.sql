@@ -6,7 +6,7 @@ create table class_unnormalized (
 	class2 varchar,
 	class3 varchar
 );
-insert into class_unnormalized (
+insert into advanced_tutorial.public.class_unnormalized (
 	advisor,
 	room,
 	class1,
@@ -18,12 +18,12 @@ values
 ('Smith', 131, 'English', 'Math', 'Library Science');
 
 
-select * from class_unnormalized;
+select * from advanced_tutorial.public.class_unnormalized;
 
 
 
 select c.student_id, t.*
-from class_unnormalized c
+from advanced_tutorial.public.class_unnormalized c
   cross join lateral (
      values 
        (c.class1, 'class1'),

@@ -16,8 +16,12 @@ array_table ;
 
 -- Querying an ARRAY column
 SELECT *
-FROM mytable
+FROM array_table
 WHERE 2 = ANY(myarray);
+
+
+insert into array_table (myarray)
+values (array[9, 27, 43, 64]);
 
 select * 
 from array_table 

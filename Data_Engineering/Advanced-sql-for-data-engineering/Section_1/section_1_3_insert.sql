@@ -8,12 +8,12 @@ create table tutorial.employees (
 	department varchar default 'Unassigned'
 );
 
-INSERT INTO employees (id, first_name, last_name, email) 
+INSERT INTO tutorial.employees (id, first_name, last_name, email) 
 VALUES (1, 'John', 'Doe', 'johndoe@example.com');
 
-select * from employees e ;
+select * from tutorial.employees e ;
 
-INSERT INTO employees (id, first_name, last_name, email) VALUES
+INSERT INTO tutorial.employees (id, first_name, last_name, email) VALUES
 (2, 'Jane', 'Smith', 'janesmith@example.com'),
 (3, 'Bob', 'Johnson', 'bobjohnson@example.com'),
 (4, 'Alice', 'Williams', 'alicewilliams@example.com');

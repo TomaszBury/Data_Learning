@@ -6,7 +6,7 @@ create table employees (
 	salary NUMERIC(10, 2) NOT NULL
 );
 
-INSERT INTO employees (first_name, last_name, department_id, salary) VALUES
+INSERT INTO advanced_tutorial.public.employees (first_name, last_name, department_id, salary) VALUES
 ('Alice', 'Smith', 1, 50000),
 ('Bob', 'Johnson', 2, 60000),
 ('Charlie', 'Brown', 1, 55000);
@@ -22,7 +22,7 @@ INSERT INTO employees (first_name, last_name, department_id, salary)
 VALUES (p_first_name, p_last_name, p_department_id, p_salary);
 END;
 $$;
-select * from employees;
+select * from advanced_tutorial.public.employees;
 call insert_employee('David', 'Martinez', 3, 155000);
 
 CREATE OR REPLACE FUNCTION average_salary (p_department_id INTEGER)
@@ -33,8 +33,8 @@ DECLARE
 	v_avg_salary NUMERIC;
 BEGIN
 	SELECT AVG(salary) INTO V_avg_salary
-	FROM employees
-	WHERE department_id = _department_id;
+	FROM advanced_tutorial.public.employees
+	WHERE department_id = p_department_id;
 
 	RETURN v_avg_salary;
 END;

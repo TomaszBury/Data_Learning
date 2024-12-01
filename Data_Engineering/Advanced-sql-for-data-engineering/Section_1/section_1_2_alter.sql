@@ -25,4 +25,4 @@ ALTER TABLE tutorial.employees ADD COLUMN age INT;
 ALTER TABLE tutorial.employees DROP COLUMN age;
 
 -- We can also set a default value
-ALTER TABLE tutorial.employees ALTER COLUMN dept SET DEFAULT 'Reassigned';
+ALTER TABLE tutorial.employees ALTER COLUMN department SET DEFAULT 'Reassigned';

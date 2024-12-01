@@ -11,12 +11,12 @@ CREATE TABLE orders (
   total_amount NUMERIC(10,2) NOT NULL
 );
 
-INSERT INTO users (username, email) VALUES
+INSERT INTO advanced_tutorial.public.users (username, email) VALUES
   ('alice', 'alice@example.com'),
   ('bob', 'bob@example.com'),
   ('charlie', 'charlie@example.com');
 
-INSERT INTO orders (user_id, order_date, total_amount) VALUES
+INSERT INTO advanced_tutorial.public.orders (user_id, order_date, total_amount) VALUES
   (1, '2022-04-01', 50.00),
   (1, '2022-03-15', 25.00),
   (2, '2022-04-02', 100.00),
@@ -26,8 +26,8 @@ INSERT INTO orders (user_id, order_date, total_amount) VALUES
 
  
  
-select * from orders;
-select * from users;
+select * from advanced_tutorial.public.orders;
+select * from advanced_tutorial.public.users;
  
  
 select
@@ -35,13 +35,13 @@ select
 	o.order_id,
 	o.order_date
 from
-	users u
+	advanced_tutorial.public.users u
 left join lateral (
 	select
 		order_id,
 		order_date
 	from
-		orders
+		advanced_tutorial.public.orders
 	where
 		user_id = u.user_id
 	order by
