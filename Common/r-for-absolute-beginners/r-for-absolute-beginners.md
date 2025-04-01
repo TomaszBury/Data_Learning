@@ -1,0 +1,1 @@
+[r-for-absolute-beginners](https://nordea.udemy.com/course/r-for-absolute-beginners/)
