@@ -6,5 +6,7 @@ print(test)
 print(sqrt(9))
 
 print("wwwwwww")
-
+ń
 print("__________")
+
+1:4
