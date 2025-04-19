@@ -7,3 +7,11 @@ R.home()
 Cmd+,
 
 r.rpath.mac
+
+```base
+pip install ggplot
+```
+
+```R
+install.packages("ggplot2")
+```
